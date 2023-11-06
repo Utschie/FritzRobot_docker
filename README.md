@@ -3,7 +3,7 @@
 ## Description
 The rosmaster and the nodes are run on the docker
 
-start the nodes
+build and start the nodes
 ```
 cd ./docker
 docker-compose up -d
@@ -16,4 +16,4 @@ docker-compose down
 
 ### 2023-11-06 update
 
-automatically starts nodes in pkg fritzrobot_serial and fritzrobot_control 
+automatically starts nodes in pkg fritzrobot_serial and fritzrobot_control.
