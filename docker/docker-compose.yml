@@ -2,6 +2,7 @@
 version: '2'
 services:
   ros-noetic:
+    platform: linux/arm64/v8
     privileged: true #为了把设备挂载到容器，需要privileged的权限
     tty: true
     devices:
@@ -10,6 +11,6 @@ services:
       context: ../
       dockerfile: Dockerfile
     volumes:
-      - /home/jsy/catkin_ws:/home/jsy/catkin_ws
+      - /home/jetson/catkin_ws:/home/jetson/catkin_ws
 
 
