@@ -15,7 +15,7 @@ docker-compose down
 ```
 ### 2023-12-10 update
 
-mapped port 11311 to host computer
+mapped port 11311 to host computer, share the host's ip
 
 ### 2023-11-11 update
 added customized commands to ~/.bashrc.
