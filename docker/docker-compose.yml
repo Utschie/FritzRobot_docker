@@ -12,7 +12,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - /home/jetson/catkin_ws:/home/jetson/catkin_ws
-    ports:
-      - "11311:11311"
     network_mode: "host"
 
