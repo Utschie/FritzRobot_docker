@@ -13,5 +13,5 @@ services:
     volumes:
       - /home/jetson/catkin_ws:/home/jetson/catkin_ws
     ports:
-      - "11311"
+      - "11311:11311"
 
