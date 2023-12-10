@@ -11,5 +11,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - /home/jsy/catkin_ws:/home/jsy/catkin_ws
+    ports:
+      - "11311"
 
 

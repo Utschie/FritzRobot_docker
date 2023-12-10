@@ -13,6 +13,9 @@ stop the nodes
 cd ./docker
 docker-compose down
 ```
+### 2023-12-1- update
+
+mapping the port 11311 to host computer
 
 ### 2023-11-06 update
 
