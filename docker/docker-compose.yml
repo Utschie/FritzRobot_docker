@@ -11,12 +11,7 @@ services:
       context: ../
       dockerfile: Dockerfile
     volumes:
-<<<<<<< HEAD
-      - /home/jsy/catkin_ws:/home/jsy/catkin_ws
+      - /home/jetson/catkin_ws:/home/jetson/catkin_ws
     ports:
       - "11311"
-=======
-      - /home/jetson/catkin_ws:/home/jetson/catkin_ws
->>>>>>> c509fb8e668eb546fbf1d6a6403e1f59c979ffab
-
 
