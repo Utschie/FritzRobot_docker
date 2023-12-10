@@ -1,12 +1,12 @@
-FROM osrf/ros:noetic-desktop-full
+FROM arm64v8/ros:noetic
 USER root
-ENV user=jsy
+ENV user=jetson
 ENV password=jetson
 RUN mkdir /home/${user} \
     && useradd -rm -d /home/${user} -s /bin/bash  ${user} \
     && adduser ${user} sudo \
     && echo "${user}:${password}" | chpasswd \
-    && echo "jsy ALL = NOPASSWD: ALL" >> /etc/sudoers \
+    && echo "${user} ALL = NOPASSWD: ALL" >> /etc/sudoers \
     && ln -s /usr/bin/empy3 /usr/bin/empy \
     && apt-get update && apt-get install -y \
        ros-noetic-serial \
