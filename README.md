@@ -13,6 +13,8 @@ stop the nodes
 cd ./docker
 docker-compose down
 ```
+### 2023-12-28 update
+added dockerfiles supporting both of x86_64 and arm64 
 ### 2023-12-10 update
 
 share the host's ip and port

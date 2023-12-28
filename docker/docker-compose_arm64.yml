@@ -1,0 +1,15 @@
+
+version: '2'
+services:
+  ros-noetic:
+    privileged: true #为了把设备挂载到容器，需要privileged的权限
+    tty: true
+    devices:
+      - /dev:/dev
+    build:
+      context: ../
+      dockerfile: Dockerfile_arm64
+    volumes:
+      - /home/jetson/catkin_ws:/home/jetson/catkin_ws
+    network_mode: "host"
+
