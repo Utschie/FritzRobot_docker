@@ -1,7 +1,7 @@
 FROM amd64/ros:noetic
 USER root
-ENV user=jetson
-ENV password=jetson
+ENV user=jsy
+ENV password=jsy
 RUN mkdir /home/${user} \
     && useradd -rm -d /home/${user} -s /bin/bash  ${user} \
     && adduser ${user} sudo \
@@ -17,6 +17,6 @@ COPY ./  /home/${user}/FritzRobot_docker
 RUN chmod -R a+x /home/${user}/FritzRobot_docker
 USER ${user}
 WORKDIR /home/${user}
-ENTRYPOINT ["sudo", "bash","./FritzRobot_docker/ros_entrypoint.sh"]
+ENTRYPOINT ["sudo", "bash","./FritzRobot_docker/ros_entrypoint_x86_64.sh"]
 
 

@@ -1,7 +1,7 @@
 #!/bin/bash
-ROS_PATH="/home/jetson/catkin_ws"
-USER="jetson"
-PASSWORD="jetson"
+ROS_PATH="/home/jsy/catkin_ws"
+USER="jsy"
+PASSWORD="jsy"
 echo ${PASSWORD} | sudo chmod 777 /dev/ttyACM0
 echo ${PASSWORD} | sudo chmod -R 777 /dev/input/
 sudo chown ${USER}: -R /home/${USER}/
