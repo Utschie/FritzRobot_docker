@@ -8,10 +8,7 @@ RUN mkdir /home/${user} \
     && echo "${user}:${password}" | chpasswd \
     && echo "${user} ALL = NOPASSWD: ALL" >> /etc/sudoers \
     && ln -s /usr/bin/empy3 /usr/bin/empy \
-    && apt-get update && apt-get install -y \
-       ros-noetic-serial \
-       ros-noetic-teleop-twist-joy \
-       ros-noetic-joy
+    && apt-get update && apt-get install -y ros-noetic-desktop-full
 
 COPY ./  /home/${user}/FritzRobot_docker
 RUN chmod -R a+x /home/${user}/FritzRobot_docker
