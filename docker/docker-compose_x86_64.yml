@@ -10,6 +10,6 @@ services:
       context: ../
       dockerfile: Dockerfile_x86_64
     volumes:
-      - /home/jetson/catkin_ws:/home/jetson/catkin_ws
+      - /home/jsy/catkin_ws:/home/jsy/catkin_ws
     network_mode: "host"
 
