@@ -9,6 +9,7 @@ RUN mkdir /home/${user} \
     && echo "${user} ALL = NOPASSWD: ALL" >> /etc/sudoers \
     && ln -s /usr/bin/empy3 /usr/bin/empy \
     && apt-get update && apt-get install -y \
+    vim \
     ros-noetic-desktop-full \
     ros-noetic-serial \
     ros-noetic-teleop-twist-joy \
@@ -16,7 +17,8 @@ RUN mkdir /home/${user} \
     ros-noetic-depthimage-to-laserscan \
     ros-noetic-rgbd-launch \
     ros-noetic-libuvc-camera \
-    ros-noetic-libuvc-ros 
+    ros-noetic-libuvc-ros \
+    libgoogle-glog-dev
     
 
 COPY ./  /home/${user}/FritzRobot_docker
