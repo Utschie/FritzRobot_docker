@@ -12,7 +12,12 @@ RUN mkdir /home/${user} \
     ros-noetic-desktop-full \
     ros-noetic-serial \
     ros-noetic-teleop-twist-joy \
-    ros-noetic-navigation
+    ros-noetic-navigation \
+    ros-noetic-depthimage-to-laserscan \
+    ros-noetic-rgbd-launch \
+    ros-noetic-libuvc-camera \
+    ros-noetic-libuvc-ros 
+    
 
 COPY ./  /home/${user}/FritzRobot_docker
 RUN chmod -R a+x /home/${user}/FritzRobot_docker

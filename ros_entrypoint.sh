@@ -4,6 +4,7 @@ USER="jetson"
 PASSWORD="jetson"
 echo ${PASSWORD} | sudo chmod 777 /dev/ttyACM0
 echo ${PASSWORD} | sudo chmod -R 777 /dev/input/
+echo ${PASSWORD} | chmod -R 777 ~/catkin_wk/src/ros_astra_camera
 sudo chown ${USER}: -R /home/${USER}/
 source /opt/ros/noetic/setup.bash
 cd /home/${USER}/catkin_ws;
